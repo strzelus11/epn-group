@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+input,
+textarea,
+select {
+	@apply rounded-md p-2 focus:outline-none focus:border-black mb-1 w-full shadow-md text-black bg-white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+label {
+	@apply text-black text-sm -mb-1;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button {
+	@apply rounded-md px-6 py-3 transition-all duration-500 delay-150 hover:opacity-80 hover:-translate-y-0.5;
+}
+
+button[type="submit"] {
+	@apply bg-blue-900 text-white;
+}
+
+@layer utilities {
+	.animate-blob {
+		animation: blob 5s infinite ease-in-out;
+	}
+
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+
+	.animation-delay-4000 {
+		animation-delay: 4s;
+	}
+
+	@keyframes blob {
+	0%, 100% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	33% {
+		transform: translate(200px, -150px) scale(1.25);
+	}
+	66% {
+		transform: translate(-150px, 100px) scale(0.95);
+	}
+}
 }
