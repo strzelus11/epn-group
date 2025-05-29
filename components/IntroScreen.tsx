@@ -87,11 +87,11 @@ export default function IntroScreen({
 					className={`absolute bottom-[50%] flex flex-col items-center ${
 						colorClassMap[item.color]
 					}`}
-					style={{
-						filter: `drop-shadow(10px 15px 20px rgba(${getRGB(
-							item.color
-						)}, 0.5))`,
-					}}
+					// style={{
+					// 	filter: `drop-shadow(10px 15px 20px rgba(${getRGB(
+					// 		item.color
+					// 	)}, 0.5))`,
+					// }}
 				>
 					{item.icon}
 					<span className="absolute top-32 mt-2 text-center font-medium">

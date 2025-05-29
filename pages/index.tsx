@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { IoConstructOutline } from "react-icons/io5";
 import { IoFlashOutline } from "react-icons/io5";
@@ -48,7 +47,7 @@ export default function Home() {
 	const [showForm, setShowForm] = useState(false);
 
 	return (
-		<div className="min-h-[100vh] flex justify-center items-center relative">
+		<div className="h-[100vh] overflow-hidden flex justify-center items-center relative">
 			<AnimatePresence>
 				{!showForm && (
 					<IntroScreen

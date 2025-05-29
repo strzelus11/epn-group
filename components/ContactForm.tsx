@@ -93,8 +93,8 @@ const ContactForm: React.FC = () => {
 									<ErrorMessage
 										message={
 											emailError
-												? "Your email is invalid."
-												: "Your email is correct!"
+												? "Twój email jest niepoprawny."
+												: "Twój email jest poprawny!"
 										}
 										error={emailError}
 									/>
@@ -109,7 +109,6 @@ const ContactForm: React.FC = () => {
 							}
 							type="email"
                             placeholder="you@example.com"
-                            className="bg-white"
 						/>
 
 						<label htmlFor="message">Wiadomość:</label>
@@ -128,7 +127,7 @@ const ContactForm: React.FC = () => {
 							type="submit"
 							disabled={loading}
 						>
-							{loading ? "Sending..." : "Submit"}
+							{loading ? "Wysyłanie..." : "Wyślij"}
 						</button>
 					</form>
 				</div>
