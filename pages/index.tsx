@@ -47,7 +47,7 @@ export default function Home() {
 	const [showForm, setShowForm] = useState(false);
 
 	return (
-		<div className="h-[100vh] overflow-hidden flex justify-center items-center relative">
+		<div className="h-[100dvh] overflow-hidden flex justify-center items-center relative">
 			<AnimatePresence>
 				{!showForm && (
 					<IntroScreen
