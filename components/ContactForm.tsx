@@ -44,7 +44,7 @@ const ContactForm: React.FC = () => {
 				initial={{ opacity: 0.5, translateY: -400 }}
 				animate={{ opacity: 1, translateY: 0 }}
 				transition={{ delay: 0.5, duration: 2, type: "spring" }}
-				className="fixed -top-4 -left-4 sm:-top-2 sm:-left-2"
+				className="fixed -top-5 -left-5 sm:-top-2 sm:-left-2 mb-5"
 			>
 				<EpnLogo className="scale-50" />
 			</motion.div>
@@ -52,7 +52,7 @@ const ContactForm: React.FC = () => {
 				initial={{ scale: 0.5, opacity: 0.5, translateY: -400 }}
 				animate={{ scale: 1, opacity: 1, translateY: 0 }}
 				transition={{ duration: 1, type: "spring" }}
-            >
+			>
 				<div className="relative p-4 overflow-hidden sm:p-5 rounded-xl backdrop-blur-md bg-white/60 shadow-2xl max-w-xl mx-5">
 					<div className="absolute -top-10 -left-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-overlay filter opacity-100 blur-2xl -z-2"></div>
 					<div className="absolute -right-5 top-[30%] w-40 h-40 bg-indigo-300 rounded-full mix-blend-overlay filter opacity-100 blur-xl -z-2"></div>
@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
 								setEmail(e.target.value)
 							}
 							type="email"
-                            placeholder="you@example.com"
+							placeholder="you@example.com"
 						/>
 
 						<label htmlFor="message">Wiadomość:</label>
@@ -118,7 +118,7 @@ const ContactForm: React.FC = () => {
 							onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
 								setMessage(e.target.value)
 							}
-							className="min-h-[10rem]"
+							className="min-h-[8rem] sm:min-h-[10rem]"
 							placeholder="Twoja wiadomość..."
 						/>
 
