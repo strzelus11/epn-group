@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
 			<motion.div
 				initial={{ opacity: 0.5, translateY: -400 }}
 				animate={{ opacity: 1, translateY: 0 }}
-				transition={{ delay: 0.5, duration: 2, type: "spring" }}
+				transition={{ delay: 0.5, duration: 1.2, type: "spring" }}
 				className="fixed -top-5 -left-5 sm:-top-2 sm:-left-2 mb-5"
 			>
 				<EpnLogo className="scale-50" />

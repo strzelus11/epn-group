@@ -28,7 +28,6 @@ export default function IntroScreen({
 	setShowForm,
 	getRGB,
 }: IntroScreenProps) {
-	console.log(items);
 	return (
 		<motion.div
 			initial={{ scale: 1 }}
@@ -40,7 +39,7 @@ export default function IntroScreen({
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: [0, 1, 1, 1, 1, 1, 1, 0] }}
-				transition={{ duration: 6, ease: "easeInOut" }}
+				transition={{ duration: 3, ease: "easeInOut" }}
 				className="absolute bottom-[50%]"
 			>
 				<EpnLogo />
@@ -49,7 +48,7 @@ export default function IntroScreen({
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ delay: 6, duration: 1, ease: "easeInOut" }}
+				transition={{ delay: 4, duration: 1, ease: "easeInOut" }}
 				className="absolute right-[30%] bottom-[30%] sm:top-[50%]"
 			>
 				<PulsatingMouse />
@@ -79,10 +78,10 @@ export default function IntroScreen({
 						opacity: [0, 0, 0, 0, 1, 0, 0, 0, 0],
 					}}
 					transition={{
-						duration: 16,
+						duration: 10,
 						repeat: Infinity,
 						ease: "linear",
-						delay: index * 4,
+						delay: index * 2.5,
 					}}
 					className={`absolute bottom-[50%] flex flex-col items-center ${
 						colorClassMap[item.color]
